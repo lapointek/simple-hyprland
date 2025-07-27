@@ -22,7 +22,7 @@ run_command "pacman -S --noconfirm swww" "Install SWWW for wallpaper management"
 
 run_command "pacman -S --noconfirm hyprpicker" "Install Hyprpicker - Color Picker" "yes" "no"
 
-run_command "pacman -S --sudoloop --noconfirm hyprlock" "Install Hyprlock - Screen Locker (Must)" "yes" "no"
+run_command "pacman -S --noconfirm hyprlock" "Install Hyprlock - Screen Locker (Must)" "yes" "no"
 run_command "cp -r /home/$SUDO_USER/simple-hyprland/configs/hypr/hyprlock.conf /home/$SUDO_USER/.config/hypr/" "Copy Hyprlock config" "yes" "no"
 
 # run_command " -S --sudoloop --noconfirm wlogout" "Install Wlogout - Session Manager" "yes" "no"
